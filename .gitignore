@@ -1,0 +1,18 @@
+# Local credentials and per-machine configuration
+/config/config.php
+/.env
+/.env.*
+!/.env.example
+
+# Uploaded customer/content media and local logs/backups
+/uploads/*
+!/uploads/.htaccess
+*.log
+*.sql.bak
+*.dump
+*.zip
+.playwright-cli/
+
+# Local work files, generated output, and project archive
+/tmp/
+/output/

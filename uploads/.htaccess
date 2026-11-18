@@ -1,0 +1,14 @@
+# Block script execution in uploads
+<FilesMatch "\.(php|php\d|phtml|phar|cgi|pl|py|sh|asp|aspx|jsp)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^\.originals(?:/|$) - [F,L]
+</IfModule>
+
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /config/
+Disallow: /database/
+Disallow: /includes/
+Disallow: /scripts/
+Disallow: /blog-post.php
+Disallow: /blog.php
+
+Sitemap: https://www.bluedeskgroup.net/sitemap.php
